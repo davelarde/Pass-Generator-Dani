@@ -1,9 +1,19 @@
 function generatePassword(){
   //TODO: your code goes here
+//  var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//  var passwordLength = 12;
+//  var password = "";
+//  for ( var i=0; i<=passwordLength; i++){
+//    var randomNumber = Math.floor(Math.random() * chars.length);
+//    password += chars.substring (randonNumber, randomNumber +1);
+//  }
+// document.getElementById("password").value = password;
+  
 prompt("Welcome! Choose password length of at least 8 characters.");
   var randomLetter=["zlkearg@$#@$taknvoah845r92rjfdkgjh%24"];
   var randomNumber=["23874175897"];
   var randomSpecial=["hgjkhgjhgiu&%@"];
+  var passwordLength = 8 ;
 prompt("Include uppercase?");
   
   prompt("Include lowercase?");
@@ -17,8 +27,11 @@ prompt("Include uppercase?");
   var randomText= randomG.substring(Math.floor(Math.random() * randomG.length), Math.floor(Math.random() * randomG.length) + 4);
   var randomInput= randomG.substring(Math.floor(Math.random() * randomG.length), Math.floor(Math.random() * randomG.length) + 4);
   var randomMg= randomText.concat(randomInput.toUpperCase().trim());
-  
+  for(var i=0; i< passwordLength; i++){
+    
+  }
   return randomMg;
+  
 }
 
 
